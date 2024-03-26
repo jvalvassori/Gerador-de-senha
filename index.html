@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de senhas, gerador password"> 
+    <title>Gerador de senhas</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="logo" src="assets/logo.png" alt="Gerador de senhas">
+   
+    <div id="opc" class="opcoes">
+        
+            <label>
+                <input type="checkbox" id="maiusculas" /> Letras maiúsculas
+            </label>
+            <label>
+                <input type="checkbox" id="numeros" /> Números
+            </label>
+            <label>
+                <input type="checkbox" id="especiais" /> Caracteres especiais
+            </label>
+        </div>
+
+    <div class="container-input">
+        <span id="valor0">Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15" />
+        
+        <button id="botao" class="button-cta">Gerar senha</button>
+    </div>
+
+    <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password"></span>
+        <p id="identificando" class="password"><p id="tipo"></p></p>
+        
+        <button id="voltar" class="button-cta">Voltar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
